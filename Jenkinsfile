@@ -8,14 +8,11 @@ pipeline {
             }
         }
 
-         stage('Installation de maven') {
+         stage('Installation de maven4') {
             steps {
                 withMaven{
                    sh 'mvn clean install '
                 }
-                 
-                
-               
             }
         }
 
