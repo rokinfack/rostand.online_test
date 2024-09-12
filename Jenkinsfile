@@ -5,9 +5,25 @@ pipeline {
         timeout(time: 1, unit: 'SECONDS')
     }
     stages {
-        stage('Example') {
+        stage('Installation de maven') {
             steps {
-                echo 'mvn test'
+                sh 'mvn -v'
+            }
+        }
+
+        stage('clean et Installation les dependances') {
+            steps {
+                sh 'mvn -v'
+            }
+        }
+         stage('Execution des tests') {
+            steps {
+                sh 'mvn  test'
+            }
+        }
+        post{
+            always{
+                echo 'affichage des rapports'
             }
         }
     }
