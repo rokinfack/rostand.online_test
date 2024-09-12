@@ -8,6 +8,15 @@ pipeline {
             }
         }
 
+         stage('Installation de maven') {
+            steps {
+                withMaven(
+                  sh 'mvn clean install '
+                )
+               
+            }
+        }
+
         stage('clean et Installation les dependances') {
             steps {
                 sh 'mvn -v'
