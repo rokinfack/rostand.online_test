@@ -30,7 +30,7 @@ pipeline {
     }
      post{
             always{
-                echo 'affichage des rapports'
+                junit 'target/surefire-reports/**/*.xml'
             }
         }
 }
