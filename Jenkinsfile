@@ -21,10 +21,11 @@ pipeline {
                 sh 'mvn  test'
             }
         }
-        post{
+       
+    }
+     post{
             always{
                 echo 'affichage des rapports'
             }
         }
-    }
 }
