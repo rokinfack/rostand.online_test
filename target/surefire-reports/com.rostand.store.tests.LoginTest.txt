@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.rostand.store.tests.LoginTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 94.81 s - in com.rostand.store.tests.LoginTest
